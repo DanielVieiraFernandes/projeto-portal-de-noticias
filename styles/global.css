@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: var(--text);
+  font: var(--text);
   color: var(--text-color-primary);
   background-color: var(--bg-color);
 }
@@ -39,5 +39,21 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: var(--text);
+  font: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
+/* Utility-first */
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
 }
