@@ -15,7 +15,7 @@ section header {
     }
 
     &:hover span {
-      background-image: url(../assets/icons/ArrowRightHover.svg);
+      background-image: url(../assets/icons/ArrowRight-hover.svg);
     }
   }
 }
@@ -27,15 +27,16 @@ section header {
   }
 
   .card {
-    position: relative;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+
     &::before {
       content: "";
-      background: linear-gradient(180deg, transparent 0%, #020617 100%);
       position: absolute;
       inset: 0;
       top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
     }
 
     figcaption {
@@ -47,33 +48,17 @@ section header {
       &:has(.text-lg) {
         padding: 12px;
       }
-    }
 
-    h2 {
-      margin-top: 8px;
-    }
-
-    .text-2xl {
-      font: var(--h1);
-    }
-
-    .text-xl {
-      font: var(--h2);
-    }
-
-    .text-lg {
-      font: var(--h3);
-    }
-
-    .text-sm {
-      font: var(--text-sm);
+      h2 {
+        margin-top: 8px;
+      }
     }
   }
 }
 
 #weekly {
   & > div {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 292px);
   }
 
   img {
